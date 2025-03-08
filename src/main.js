@@ -14,7 +14,7 @@ const gltfLoader = new GLTFLoader();
 
 // Flower
 gltfLoader.load(
-	'../public/models/flower.glb',
+	'./assets/models/flower.glb',
 	(gltf) => {
 		gltf.scene = gltf.scene;
 
@@ -41,7 +41,7 @@ gltfLoader.load(
 
 // Desk
 gltfLoader.load(
-	'../public/models/desk.glb',
+	'./assets/models/desk.glb',
 	(gltf) => {
 		gltf.scene.traverse((child) => {
 			child.intensity = 80;
